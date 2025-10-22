@@ -1,4 +1,4 @@
-/* Reset & basic setup */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(210, 250, 245);
+    background-color: rgba(243, 5, 124, 0.904);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #222;
@@ -35,11 +35,12 @@ nav ul li a:hover {
     color: yellow;
 }
 
-/* Article layout */
+
 article {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    
 }
 
 article header {
@@ -48,12 +49,14 @@ article header {
 }
 
 article h2 {
-    color: rgb(231, 7, 175);
+    color: rgb(7, 224, 231);
     margin-bottom: 5px;
     display: inline-block;
     position: relative;
 }
-
+article p{
+    color: rgb(7, 224, 231) ;
+}
 article h2::after {
     content: "";
     position: absolute;
@@ -97,7 +100,7 @@ figcaption {
     border-left: 2px solid #007bff;
 }
 
-/* Sections */
+
 section {
     color: rgb(5, 126, 240);
     text-align: justify;
@@ -105,17 +108,17 @@ section {
 }
 
 section h3 {
-    color: rgb(231, 7, 175);
+    color: rgba(6, 85, 230, 0.87) ;;
     margin-bottom: 10px;
 
 
     text-decoration: underline;
     
-    /* underline color */
+    
     text-decoration-thickness: 3px;
-    /* underline width */
+   
     text-underline-offset: 5px;
-    /* gap between text & underline */
+   
 
 }
 
@@ -126,6 +129,36 @@ footer {
     padding: 15px 0;
     background-color: #007bff;
     color: white;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #db05f7;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.blog-header h2 {
+    margin: 0;
+    color: #222;
+    font-size: 22px;
+}
+
+.blog-header p {
+    margin: 5px 0 0;
+    color: #f2f3fd;
+    font-size: 14px;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
 }
 
 /* Responsive menu for small screens */
