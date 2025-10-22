@@ -1,0 +1,146 @@
+/* Reset & basic setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(210, 250, 245);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #007bff;
+    padding: 15px 0;
+    margin-bottom: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Article layout */
+article {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: rgb(231, 7, 175);
+    margin-bottom: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+article h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(5, 126, 240);
+    border-radius: 3px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+/* Figure & caption styling */
+figure {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.03);
+
+}
+
+figcaption {
+    color: #007bff;
+    font-style: normal;
+    margin-top: 8px;
+    padding-left: 8px;
+    border-left: 2px solid #007bff;
+}
+
+/* Sections */
+section {
+    color: rgb(5, 126, 240);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: rgb(231, 7, 175);
+    margin-bottom: 10px;
+
+
+    text-decoration: underline;
+    
+    /* underline color */
+    text-decoration-thickness: 3px;
+    /* underline width */
+    text-underline-offset: 5px;
+    /* gap between text & underline */
+
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive menu for small screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    figure {
+        width: 95%;
+    }
+
+    article {
+        width: 95%;
+    }
+}
