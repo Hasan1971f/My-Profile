@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-           
+
 
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -97,6 +97,15 @@
             object-fit: cover;
             margin-bottom: 20px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+            
+            pointer-events: none;
+            
+            user-select: none;
+            
+            -webkit-user-drag: none;
+           
+            touch-action: none;
+           
         }
 
         .hero h1 {
@@ -328,7 +337,10 @@
     <footer>
         <p>© 2025 Hasan’s Travel Blog | Made with ❤️ by Hasan | All rights reserved 🌍</p>
     </footer>
-
+    <script>
+        // রাইট-ক্লিক নিষিদ্ধ
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </body>
 
 </html>

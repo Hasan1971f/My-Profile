@@ -61,6 +61,15 @@
             border: 4px solid #fff;
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
             transition: 0.4s;
+            
+            pointer-events: none;
+          
+            user-select: none;
+           
+            -webkit-user-drag: none;
+            
+            touch-action: none;
+           
         }
 
         .about-img img:hover {
@@ -225,6 +234,10 @@
     <footer>
         <p>© 2025 Hasan’s Travel Blog | Made with ❤️ by Hasan | All rights reserved 🌍</p>
     </footer>
+    <!-- 🔒 Right-click disable script -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </body>
 
 </html>
